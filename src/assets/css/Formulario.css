@@ -1,0 +1,17 @@
+.formulario {
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+}
+
+.formulario h1 {
+    font-size: 2rem;
+}
+
+.formulario .checkboxes {
+    margin: 1rem 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

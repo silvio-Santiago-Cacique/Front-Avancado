@@ -1,0 +1,40 @@
+button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #b36f6f;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+button img {
+  margin-right: 10px;
+  max-height: 100%;
+}
+
+button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
