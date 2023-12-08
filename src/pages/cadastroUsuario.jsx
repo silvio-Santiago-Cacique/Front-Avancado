@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 
 import "../assets/css/Formulario.css";
+import NavigationBar from "../components/Menu";
 import Rodape from "../components/Rodape";
 import BotaoVoltar from "../components/BotaoVoltar";
 
@@ -26,6 +27,7 @@ function Form() {
 
   return (
     <div >
+      <NavigationBar/>
       <Container maxWidth="sm" component="article" className="form" >
         <h1>Formulário de Cadastro de <span>Usuários</span></h1>
         <form onSubmit={(event) => {

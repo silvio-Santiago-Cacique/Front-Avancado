@@ -13,7 +13,6 @@ export default function App() {
   return (
     <div>
         {/* definção das rotas*/}
-        <NavigationBar/>
         <Routes >
           <Route path="/" element={<PgPrincipal/>} />
             <Route index element={<PgPrincipal />} />

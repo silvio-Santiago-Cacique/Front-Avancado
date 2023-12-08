@@ -8,8 +8,9 @@ import {
   Checkbox,
   FormControlLabel,
 } from '@mui/material';
-import Rodape from "../components/Rodape";
 import "../assets/css/Formulario.css";
+import NavigationBar from "../components/Menu";
+import Rodape from "../components/Rodape";
 import BotaoVoltar from "../components/BotaoVoltar";
 
 
@@ -25,8 +26,9 @@ function Form() {
   const [CPFError, setCPFError] = useState(false);
 
   return (
-    <div>
-    <Container maxWidth="sm" component="article" className="form" >
+    <div >
+      <NavigationBar/>
+    < Container maxWidth="sm" component="article" className="form"  >
         <h1>Formulário de Cadastro de Clientes</h1>
         <form onSubmit={(event) => {
           event.preventDefault();

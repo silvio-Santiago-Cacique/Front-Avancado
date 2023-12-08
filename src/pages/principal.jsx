@@ -1,10 +1,11 @@
 
 {/* Componente principal, encarregado de chamar os demais componentes do projeto*/}
 import { cloneElement, useEffect, useState } from "react"
+import { Link, Menu } from "@mui/material";
 import './Products'
+import NavigationBar from "../components/Menu.jsx";
 import CardCustom from "../components/Card.jsx";
 import Rodape from "../components/Rodape.jsx";
-import { Link, Menu } from "@mui/material";
 
 
 
@@ -20,7 +21,7 @@ function PgPrincipal(props) {
                   textAlign:'center',
                   marginBottom :'0px',
                   position:'relative' }}>
-
+        <NavigationBar/>
         <h3 style={{ width: '100%',
                       padding:'5px',
                       textAlign:'center',

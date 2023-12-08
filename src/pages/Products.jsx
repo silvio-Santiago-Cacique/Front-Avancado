@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import Item from "../components/Item"
 import axios from 'axios'
+import NavigationBar from "../components/Menu"
 import Rodape from "../components/Rodape"
 import BotaoVoltar from "../components/BotaoVoltar"
 
@@ -16,6 +17,7 @@ export default function Autos() {
 
   return (
       <div className="content-auto" >
+        <NavigationBar/>
         <section className="main-autos" style={{display:"flex", justifyContent:"center"}}>
           {autoList.map((p, index) => (
             <Item key={index} auto={p} />
